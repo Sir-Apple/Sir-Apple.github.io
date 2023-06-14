@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> TuanAnh Tran Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="images/AVatar.png"> TuanAnh Tran </a>
+		<div class="menuToggle"></div>
+		<ul class="nav">
+			<li class="active"><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<section id="home">
+		<div class="content">
+			<h2>TuanAnh Tran Portfolio</h2>
+			<p>Passionate and motivated in web and game development. Detail-oriented in problem solving and planning. Ready 
+to make an immediate contribution to your organization. Hardworking and patient, able to manage others while 
+working autonomously to complete tasks. Experience working effectively on various teams to exceed expectations 
+and meet goals. Curiosity and willingness to learn and quickly adapt to new skills and environments</p>
+			<a href="#" class="btn">Download CV</a>
+		</div>
+		<img src="images/me.png" class="men">
+	</section>
+	<section id="about">
+		<div class="secText">
+			<h2>About me</h2>
+			<p>My name is TuanAnh (or can just call me Anh), born in 1999, I graduated with a Bachelor of IT (Information Systems) in 2019 and a Bachelor of Games and Interactive Environment (Game Design) in 2022 at Queensland University of Technology.
+
+I have experience in game-level design as well as C# scripting with Unity Engine and a bit of Unreal Engine with C++, I also have skills in 3D low-poly modelling with Blender.
+
+Therefore, I also have web front-end development experience with HTML, CSS and Javascript as well as a learner of React.</p>
+		</div>
+		<div class="content">
+			<div class="servicesBx">
+				<img src="images/game-design.png">
+				<h3>Game Development</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/game-development.png">
+				<h3>Game Designing</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/3d-modeling.png">
+				<h3>Low-poly modeler</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/web-development.png">
+				<h3>Web Development</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/web-design.png">
+				<h3>Web Designing</h3>
+			</div>
+		</div>
+		<!-- <div class="center">
+			<a href="#" class="btn">Contact Me</a>
+		</div> -->
+	</section>
+	<section id="projects">
+		<div class="secText">
+			<h2>My Projects</h2>
+		</div>
+		<div class="content">
+			<div class="imgBx">
+				<img src="images/game-design.png">
+			</div>
+			<div class="imgBx">
+				<img src="images/game-design.png">
+			</div>
+			<div class="imgBx">
+				<img src="images/game-design.png">
+			</div>
+			<div class="imgBx">
+				<img src="images/game-design.png">
+			</div>
+			<div class="imgBx">
+				<img src="images/game-design.png">
+			</div>
+		</div>
+		<div class="center">
+			<a href="#" class="btn">View More</a>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="secText">
+			<h2>Reach Me Out</h2>
+		</div>
+		<div class="content">
+			<a href="#">
+				<ion-icon name="mail-outline"></ion-icon>
+				tranquangtuananh2801@gmail.com
+			</a>
+			<a href="https://github.com/Sir-Apple">
+				<ion-icon name="logo-github"></ion-icon>				
+			</a>
+			<a href="https://www.linkedin.com/in/anh-tran-7313631b3/">
+				<ion-icon name="logo-linkedin"></ion-icon>
+				
+			</a>
+			<a href="https://www.youtube.com/channel/UCrXS4KawiyokRBFLvWjSmFA">
+				<ion-icon name="logo-youtube"></ion-icon>
+			</a>
+			<a href="https://sadapple.itch.io/">
+				<i class="fa-brands fa-itch-io"></i>				
+			</a>
+		</div>
+		<div class="center">
+			<p class="copyrights">@2023 TuanAnh Tran</p>
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		let list = document.querySelectorAll('.nav li');
+		function active(){
+			list.forEach((i) => 
+			i.classList.remove('active'));
+			this.classList.add('active');
+		}
+		list.forEach((i) =>
+		i.addEventListener('click',active));
+
+		let menuToggle = document.querySelector('.menuToggle');
+		let header = document.querySelector('header');
+		menuToggle.onclick = function(){
+			header.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
