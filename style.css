@@ -830,29 +830,12 @@ form{
 		height: 80px;
 	}
 	.contact-box{
-		margin-top: 82%;
+		margin-top: 88%;
 	}
 }
 
 @media (max-height: 850px){
-	/*#home .content2{
-		grid-template-columns: repeat(3, 1fr);
-		margin-left: -50px;
-		grid-gap: 0.1px;
-	}
-	#home .content2 .servicesBx{
-		width: 70%;
-		height: 30%;
-	}
-	#home .content2 .servicesBx h3{
-		font-size: 0.75em;
-	}
-	#home .content2 .servicesBx img{
-		max-width: 26px;
-	}
-	#home .men{
-		height: 30vh;
-	}*/
+	
 	#home{
 		position: relative;
 		width: 100%;
@@ -861,6 +844,6 @@ form{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 100px;
+		padding-top: 150px;
 	}
 }
