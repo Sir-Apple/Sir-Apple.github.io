@@ -9,6 +9,16 @@
 	<script src="https://kit.fontawesome.com/06d1f8db35.js" crossorigin="anonymous"></script>
 	<link rel="shortcut icon" type="image/png" href="images/pixelcon.png">
 	<script src="script.js"></script>
+	<script src="emailscript.js"></script>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+   		(function(){
+      	emailjs.init("WQbrLghqIdzX_4zIh");
+   		})();
+	</script>
+
 </head>
 <body>
 	<header>
@@ -110,7 +120,7 @@ Therefore, I also have web front-end development experience with HTML, CSS and J
 			<div class="imgBx" data-tilt>
 				<h3 style="color: #30fe6c">My Portfolio</h3>
 				<img src="images/portfolio.png">
-				<p style="font-size: 1em; color: ghostwhite; text-align: left; padding: 10px;">My personal portfolio</p>
+				<p style="font-size: 1em; color: ghostwhite; padding: 10px;">My personal portfolio</p>
 			</div>
 			<div class="imgBx" style="border: 2px solid rgba(255, 165, 0, 0.85)" data-tilt>
 				<a href="https://github.com/Sir-Apple/CodingInThePark" style="text-decoration: none;">
@@ -153,12 +163,13 @@ Therefore, I also have web front-end development experience with HTML, CSS and J
 			<h2>Reach Me Out</h2>
 		</div>
 		<div class="contact-box">
-			<form action="https://formspree.io/f/mlekqwyr" method="POST">
-				<input type="text" class="input-field" placeholder="Fullname">
-				<input type="email" class="input-field" placeholder="Email">
-				<input type="text" class="input-field" placeholder="Subject">
-				<textarea type="text" class="input-field textarea-field" placeholder="Message"></textarea>
-				<button class="button" style="vertical-align:middle" type="submit"><span>Send message </span></button>
+			<form action="https://formsubmit.co/tranquangtuananh2801@gmail.com" method="POST">
+				<input type="text" class="input-field" id="name" name="name" required placeholder="Fullname">
+				<input type="email" class="input-field" id="email" name="email" required placeholder="Email">
+				<input type="text" class="input-field" id="subject" name="subject" required placeholder="Subject">
+				<textarea type="text" class="input-field textarea-field" id="message" name="message" required placeholder="Message"></textarea>
+				<input type="hidden" name="_captcha" value="false">
+				<button class="button" id="button" style="vertical-align:middle" type="submit" onclick="sendMail()"><span>Submit </span></button>
 			</form>
 		</div>
 		<div class="content">
