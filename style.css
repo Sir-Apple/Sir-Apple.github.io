@@ -379,12 +379,13 @@ header ul li:hover a{
 	margin-top: 10px;
 	position: relative;
 	display: inline-block;
-	color: rgba(255, 255, 255, 0.4);
+	color: #000;
 	text-decoration: none;
 	background: rgb(129, 133, 137);
 	padding: 10px 30px;
 	width: 40%;
 	transition: 0.5s;
+	border-radius: 30px;
 }
 
 #projects .content .imgBx a:hover{
