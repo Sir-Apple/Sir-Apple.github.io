@@ -406,11 +406,11 @@ header ul li:hover a{
 }
 
 .engine{
-	width: 15%;
-	height: 15%;
+	width: 20%;
 	position: absolute;
 	margin-left: 10px;
-	filter: invert(5);
+	margin-top: 5px;
+	filter: invert(1);
 	background-color: transparent;
 }
 
