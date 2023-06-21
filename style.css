@@ -378,11 +378,19 @@ header ul li:hover a{
 
 #projects .content{
 	justify-content: center;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+/*	grid-template-columns: repeat(5, 1fr);*/
 	grid-gap: 30px;
 	margin: 20px 0;
 	transform-style: preserve-3d;
+}
+
+#projects .content.web-content{
+	grid-template-columns: repeat(5, 1fr);
+	display: grid;
+}
+
+#projects .content.game-content{
+	display: flex;
 }
 
 #projects .imgBx.reveal.active{
@@ -707,7 +715,7 @@ form{
 		max-width: 120px;
 		max-height: 120px;
 	}
-	#projects .content{
+	#projects .content.web-content{
 		grid-template-columns: repeat(3, 1fr);
 	}
 	.contact-box{
@@ -766,6 +774,17 @@ form{
 	.contact-box{
 		margin-top: 35%;
 	}
+	#projects .content.web-content{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#projects .content.game-content{
+		/*overflow: hidden;
+		width: 1500px;
+		margin-left: -80px;*/
+		grid-template-columns: repeat(2, 1fr);
+		display: grid;
+	}
 }
 
 @media (max-width: 960px){
@@ -811,7 +830,6 @@ form{
 /*		margin: 100px 40px 20px -250px;*/
 	}
 	#about .content,
-	#projects .content,
 	#contact .content{
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -877,6 +895,19 @@ form{
 	.input-field{
 		width: 325px;
 	}
+
+	#projects .content.web-content{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#projects .content.game-content{
+		/*overflow: hidden;
+		width: 1500px;
+		margin-left: -80px;*/
+		grid-template-columns: repeat(1, 1fr);
+		display: grid;
+	}
+
 	#projects .wrapper{
 		height: 80%;
 		width: 80%;
