@@ -808,7 +808,7 @@ form{
 		grid-template-columns: repeat(3, 1fr);
 		position: relative;
 		margin-top: 10px;
-		margin: 100px 40px 20px -250px;
+/*		margin: 100px 40px 20px -250px;*/
 	}
 	#about .content,
 	#projects .content,
@@ -961,16 +961,19 @@ form{
 	}
 }
 
-@media (max-height: 850px){
+@media (max-height: 920px){
 	
 	#home{
 		position: relative;
 		width: 100%;
-		min-height: 114vh;
+		min-height: 150vh;
 		background: #222;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 150px;
+	}
+	#home .content2{
+		margin-top: 650px;
 	}
 }
