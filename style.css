@@ -916,6 +916,9 @@ form{
 		width: 55%;
 		bottom: -150px;
 	}
+	#projects .imgBx1{
+		margin-left: 1%;
+	}
 }
 @media (max-width: 790px){
 	.contact-box{
@@ -974,6 +977,9 @@ form{
 	#home .content2{
 		grid-template-columns: repeat(2, 1fr);
 		margin-left: -120px;
+	}
+	#projects .imgBx1{
+		margin-left: 5%;
 	}
 	#projects .content,
 	#contact .content{
