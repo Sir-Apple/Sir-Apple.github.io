@@ -204,6 +204,10 @@ header ul li:hover a{
 	border-top-right-radius: 25vw;
 	border-top-left-radius: 25vw;
 	visibility: visible;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 
 #home .content{
@@ -213,6 +217,10 @@ header ul li:hover a{
 	gap: 10px;
 	max-width: 950px;
 	z-index: 10;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 
 #home .content h2{
@@ -226,6 +234,10 @@ header ul li:hover a{
 	color: ghostwhite;
 	font-size: 1.2em;
 	line-height: 1.6em;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 .btn{
 	position: relative;
@@ -240,6 +252,10 @@ header ul li:hover a{
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	margin-top: 10px;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 
 #home .men{
@@ -247,6 +263,10 @@ header ul li:hover a{
 	bottom: 0;
 	right: 300px;
 	max-height: 90vh;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 
 #home .content2{
@@ -255,6 +275,10 @@ header ul li:hover a{
 	grid-template-columns: repeat(5,1fr);
 	grid-gap: 20px;
 	margin: 600px 40px 0 0;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 /*trouble*/
 #home .content2 .servicesBx{
