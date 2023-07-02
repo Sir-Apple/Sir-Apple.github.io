@@ -430,6 +430,7 @@ header ul li:hover a{
   transition: 1s;
   border-radius: 1em;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .btn-filter:hover {
