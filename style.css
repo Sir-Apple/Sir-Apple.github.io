@@ -409,9 +409,42 @@ header ul li:hover a{
 	transform-style: preserve-3d;
 }
 
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn-filter {
+	margin-top: 20px;
+	margin-bottom: 20px;
+  width: 6em;
+  position: relative;
+  height: 3em;
+  border: 3px ridge green;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 1em;
+  font-size: 16px;
+}
+
+.btn-filter:hover {
+  box-shadow: inset 0px 0px 25px #30fe6c;
+}
+
+.btn-filter.activated{
+	box-shadow: inset 0px 0px 25px green;
+}
+
+
 #projects .content.web-content{
-	grid-template-columns: repeat(5, 1fr);
-	display: grid;
+	/*grid-template-columns: repeat(5, 1fr);
+	display: grid;*/
+	display: box;
 }
 
 #projects .content.game-content{
@@ -433,6 +466,9 @@ header ul li:hover a{
 	padding-bottom: 20px;
 	box-shadow: 0 30px 20px #5555;
 	opacity: 0;
+	width: 65%;
+	margin-left: 16%;
+	margin-top: 10%;
 }
 
 #projects .content .imgBx h3{
@@ -440,11 +476,12 @@ header ul li:hover a{
 }
 
 #projects .content .imgBx img{
-	max-width: 80%;
+	max-width: 70%;
 	height: 200px;
 	object-fit: cover;
 	border-radius: 15px;
 	box-shadow: 0 30px 20px #5555;
+	margin-left: 15%;
 }
 
 #projects .content .imgBx a{
@@ -740,9 +777,9 @@ form{
 		max-width: 120px;
 		max-height: 120px;
 	}
-	#projects .content.web-content{
+	/*#projects .content.web-content{
 		grid-template-columns: repeat(3, 1fr);
-	}
+	}*/
 	.contact-box{
 		margin-top: 25%;
 	}
@@ -799,9 +836,9 @@ form{
 	.contact-box{
 		margin-top: 35%;
 	}
-	#projects .content.web-content{
+	/*#projects .content.web-content{
 		grid-template-columns: repeat(2, 1fr);
-	}
+	}*/
 
 	/*#projects .content.game-content{
 		grid-template-columns: repeat(2, 1fr);
@@ -918,9 +955,9 @@ form{
 		width: 325px;
 	}
 
-	#projects .content.web-content{
+	/*#projects .content.web-content{
 		grid-template-columns: repeat(1, 1fr);
-	}
+	}*/
 
 /*	#projects .content.game-content{
 		grid-template-columns: repeat(1, 1fr);
@@ -940,6 +977,7 @@ form{
 		width: 55%;
 		bottom: -150px;
 	}
+	#projects .imgBx,
 	#projects .imgBx1{
 		margin-left: 1%;
 	}
@@ -1002,10 +1040,15 @@ form{
 		grid-template-columns: repeat(2, 1fr);
 		margin-left: -120px;
 	}
+	#projects .imgBx,
 	#projects .imgBx1{
 		margin-left: 5%;
 	}
-	#projects .content,
+	#projects .content .imgBx{
+		width: 90%;
+		margin-left: 5%;
+	}
+/*	#projects .content,*/
 	#contact .content{
 		grid-template-columns: repeat(1, 1fr);
 	}

@@ -137,50 +137,87 @@ Therefore, I also have web front-end development experience with HTML, CSS and J
 		<div class="secText reveal">
 			<h2>My Projects</h2>
 		</div>
+		<div id="myBtnContainer">
+		  <!-- <button class="btn active" onclick="filterSelection('all')"> All</button> -->
+		  <button class="btn-filter" onclick="filterSelection('webs')"> Websites</button>
+		  <button class="btn-filter activated" onclick="filterSelection('games')"> Games</button>
+		  <button class="btn-filter" onclick="filterSelection('simulators')"> Simulators</button>
+		</div>
 		<p style="color: #E5E4E2">Green: Personal </br> Goldenrod: Work-related</p>
-		<h2 style="font-size: 2em; color: #30fe6c; padding-top: 20px;">Web front-end</h2>
-		<div class="content web-content">
-			<div class="imgBx reveal" data-tilt>
-				<h3 style="color: #30fe6c">My Portfolio</h3>
-				<img src="images/portfolio.png">
-				</br>
-				<i class="fa-brands fa-html5"></i>
-				<i class="fa-brands fa-css3-alt"></i>
-				<i class="fa-brands fa-js"></i>
-				</br>
-				<p style="font-size: 1em; color: ghostwhite; padding: 80px;">My personal portfolio</p>
-			</div>
-			<div class="imgBx reveal" style="border: 2px solid rgba(255, 165, 0, 0.85)" data-tilt>
-				<h3 style="color: rgba(255, 165, 0, 0.85)"><ion-icon name="logo-github" style="color: black;"></ion-icon>      Coding in the park</h3>
-				<img src="images/codinginthepark.png">
-				</br>
-				<i class="fa-brands fa-html5"></i>
-				<i class="fa-brands fa-css3-alt"></i>
-				<i class="fa-brands fa-js"></i>
-				<i class="fa-brands fa-php"></i>
-				<iconify-icon icon="devicon-plain:mysql"></iconify-icon>
-				</br>
-				<a href="https://github.com/Sir-Apple/CodingInThePark" target="_blank"> View on GitHub
-				</a>
-				<!-- <p style="font-size: 1em; color: ghostwhite; line-height: 25px; padding: 10px; text-align: left;">My first ever front-end development project.</p> -->
-				<p style="font-size: 1em; color: ghostwhite; line-height: 25px; padding: 10px; text-align: left;">A website of an education based internal project that focuses on S.T.E.M.(Science, Technology, Engineering and Mathematic), which gives people an altered learning experience using physical activities to catalyse learning.</p>
-			</div>
-			<div class="imgBx reveal" style="border: 2px solid rgba(255, 165, 0, 0.85)" data-tilt>
-					<h3 style="color: rgba(255, 165, 0, 0.85)">Epoch2140 Landing Page</h3>
-					<img src="images/epoch.png">
+		<!-- <h2 style="font-size: 2em; color: #30fe6c; padding-top: 20px;">Web front-end</h2> -->
+		<div class="content web-content webs filterDiv">
+			<div class="owl-carousel owl-theme">
+				<div class="imgBx reveal" data-tilt>
+					<h3 style="color: #30fe6c">My Portfolio</h3>
+					<img src="images/portfolio.png">
 					</br>
 					<i class="fa-brands fa-html5"></i>
 					<i class="fa-brands fa-css3-alt"></i>
 					<i class="fa-brands fa-js"></i>
 					</br>
-					<a href="https://epoch2140.com/" target="_blank">View page
+					<p style="font-size: 1em; color: ghostwhite; padding: 80px;">My personal portfolio</p>
+				</div>
+				<div class="imgBx reveal" style="border: 2px solid rgba(255, 165, 0, 0.85)" data-tilt>
+					<h3 style="color: rgba(255, 165, 0, 0.85)"><ion-icon name="logo-github" style="color: black;"></ion-icon>      Coding in the park</h3>
+					<img src="images/codinginthepark.png">
+					</br>
+					<i class="fa-brands fa-html5"></i>
+					<i class="fa-brands fa-css3-alt"></i>
+					<i class="fa-brands fa-js"></i>
+					<i class="fa-brands fa-php"></i>
+					<iconify-icon icon="devicon-plain:mysql"></iconify-icon>
+					</br>
+					<a href="https://github.com/Sir-Apple/CodingInThePark" target="_blank"> View on GitHub
 					</a>
-					<p style="font-size: 1em; color: ghostwhite; line-height: 25px; padding: 10px; text-align: left;">The landing page of the Epoch 2140 which provides details of the game.</p>
+					<!-- <p style="font-size: 1em; color: ghostwhite; line-height: 25px; padding: 10px; text-align: left;">My first ever front-end development project.</p> -->
+					<p style="font-size: 1em; color: ghostwhite; line-height: 25px; padding: 10px; text-align: left;">A website of an education based internal project that focuses on S.T.E.M.(Science, Technology, Engineering and Mathematic), which gives people an altered learning experience using physical activities to catalyse learning.</p>
+				</div>
+				<div class="imgBx reveal" style="border: 2px solid rgba(255, 165, 0, 0.85)" data-tilt>
+						<h3 style="color: rgba(255, 165, 0, 0.85)">Epoch2140 Landing Page</h3>
+						<img src="images/epoch.png">
+						</br>
+						<i class="fa-brands fa-html5"></i>
+						<i class="fa-brands fa-css3-alt"></i>
+						<i class="fa-brands fa-js"></i>
+						</br>
+						<a href="https://epoch2140.com/" target="_blank">View page
+						</a>
+						<p style="font-size: 1em; color: ghostwhite; line-height: 25px; padding: 10px; text-align: left;">The landing page of the Epoch 2140 which provides details of the game.</p>
+				</div>
 			</div>
+				<script src="vanilla-tilt.js"></script>
+				<script type="text/javascript">
+				$('.owl-carousel').owlCarousel({
+	    loop:false,
+	    margin:10,
+	    nav:false,
+	    autoplay: false,
+	    autoplayTimeout: 2000,
+	    autoplayHoverPause: true,
+	    responsiveClass: true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:1
+	        },
+	        1000:{
+	        		items:2
+	        },
+	        1300:{
+	        		items:2
+	        },
+	        1920:{
+	            items:3
+	        }
+	    }
+	})
+			</script>
 		</div>
-		<script src="vanilla-tilt.js"></script>
-		<h2 style="font-size: 2em; color: #30fe6c; padding-top: 20px;">Gamified</h2>
-		<div class="content game-content">
+			
+		<!-- <h2 style="font-size: 2em; color: #30fe6c; padding-top: 20px;">Gamified</h2> -->
+		<div class="content game-content games filterDiv">
 			<div class="owl-carousel owl-theme">
 				<a href="https://sadapple.itch.io/the-haunted" class="imgBx1 personal reveal item" target="_blank">
 					<div class="wrapper">
@@ -189,14 +226,6 @@ Therefore, I also have web front-end development experience with HTML, CSS and J
 					</div>
 					<img src="images/thehauntedtitle.png" class="logo1">
 					<img src="images/thehauntedcharacter.png" class="character">	
-				</a>
-				<a href="https://sadapple.itch.io/old-government-house-ar-simulator" class="imgBx1 work-uni reveal item" target="_blank">
-					<div class="wrapper">
-						<img src="images/unitygold.png" class="engine" style="width: 10%;">
-						<img src="images/ogh2.png" class="cover-image">
-					</div>
-					<img src="images/oghtittle.png" class="logo1">
-					<img src="images/LadyLamington.png" class="character">	
 				</a>
 				<div class="imgBx1 work-uni reveal item">
 					<div class="wrapper">
@@ -227,37 +256,93 @@ Therefore, I also have web front-end development experience with HTML, CSS and J
 				</div>
 			</div>
 		</div>
+		<div class="content game-content simulators filterDiv">
+			<div class="owl-carousel owl-theme">
+				<a href="https://sadapple.itch.io/old-government-house-ar-simulator" class="imgBx1 work-uni reveal item" target="_blank">
+					<div class="wrapper">
+						<img src="images/unitygold.png" class="engine" style="width: 10%;">
+						<img src="images/ogh2.png" class="cover-image">
+					</div>
+					<img src="images/oghtittle.png" class="logo1">
+					<img src="images/LadyLamington.png" class="character">	
+				</a>
+			</div>
+		</div>
 		<script type="text/javascript">
 			$('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
-    autoplay: false,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    responsiveClass: true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-        		items:2
-        },
-        1300:{
-        		items:3
-        },
-        1300:{
-        		items:3
-        },
-        1920:{
-            items:4
-        }
-    }
-})
+	    loop:false,
+	    margin:10,
+	    nav:false,
+	    autoplay: false,
+	    autoplayTimeout: 2000,
+	    autoplayHoverPause: true,
+	    responsiveClass: true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },
+	        1000:{
+	        		items:2
+	        },
+	        1300:{
+	        		items:3
+	        },
+	        1300:{
+	        		items:3
+	        },
+	        1920:{
+	            items:4
+	        }
+	    }
+	})
 		</script>
+		<script>
+			filterSelection("games")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+			    w3RemoveClass(x[i], "show");
+			    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    while (arr1.indexOf(arr2[i]) > -1) {
+			      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			    }
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn-filter");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+			    var current = document.getElementsByClassName("activated");
+			    current[0].className = current[0].className.replace(" activated", "");
+			    this.className += " activated";
+			  });
+			}
+			</script>
 		<!-- <div class="center">
 			<a href="#" class="btn" style="--clr:#30fe6c">
 				<i></i><i></i>
