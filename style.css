@@ -232,13 +232,51 @@ header ul li:hover a{
 #home .content p{
 	position: relative;
 	color: ghostwhite;
-	font-size: 1.2em;
+	font-size: 1.12em;
 	line-height: 1.6em;
 	opacity: 0;
 	animation-name: fadeIn;
 	animation-fill-mode: forwards;
   animation-duration: 3s;
 }
+
+#home .content .container{
+	width: 100%;
+	overflow: hidden;
+}
+
+#home .content .container .text{
+	position: relative;
+	color: green;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#home .content .container .text.first-text{
+	color: ghostwhite;
+}
+
+#home .content .text.sec-text:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #222;
+	border-left: 2px solid green;
+	animation: typing-anim 4s steps(12) infinite;
+}
+
+@keyframes typing-anim{
+	40%, 60%{
+		left: calc(100% + 4px);
+	}
+	100%{
+		left: 0%;
+	}
+}
+
 .btn{
 	position: relative;
 	display: inline-block;
@@ -354,7 +392,7 @@ header ul li:hover a{
 	max-width: 700px;
 	text-align: center;
 	color: #aaa;
-	font-size: 1.1em;
+	font-size: 1.8em;
 	line-height: 1.5em;
 }
 #about .content{
@@ -1027,6 +1065,12 @@ form{
 @media (max-width: 700px){
 	#home .content h2{
 		font-size: 3em;
+	}
+	#home .content .container .text{
+		font-size: 18px;
+	}
+	#home .content p{
+		font-size: 0.9em;
 	}
 /*	#home::before{
 		width: 50vw;

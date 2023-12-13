@@ -56,10 +56,37 @@
 	<section id="home">
 		<div class="content">
 			<h2>TuanAnh Tran Portfolio</h2>
-			<p>Passionate and motivated in web and game development. Detail-oriented in problem solving and planning. Ready 
+			<div class="container">
+				<span class="text first-text"> I'm a </span>
+				<span class="text sec-text"> </span>
+			</div>
+			<script>
+				const text = document.querySelector(".sec-text");
+
+				const textLoad = () => {
+					setTimeout(() => {
+						text.textContent = "Game Developer/Designer"
+					}, 0);
+					setTimeout(() => {
+						text.textContent = "Web Developer/Designer"
+					}, 4000);
+					setTimeout(() => {
+						text.textContent = "Low-poly Modeler "
+					}, 8000);
+				}
+
+				textLoad();
+				setInterval(textLoad, 12000)
+			</script>
+			<!-- <p>Passionate and motivated in web and game development. Detail-oriented in problem solving and planning. Ready 
 to make an immediate contribution to your organization. Hardworking and patient, able to manage others while 
 working autonomously to complete tasks. Experience working effectively on various teams to exceed expectations 
-and meet goals. Curiosity and willingness to learn and quickly adapt to new skills and environments.</p>
+and meet goals. Curiosity and willingness to learn and quickly adapt to new skills and environments.</p> -->
+			<p>
+				My name is TuanAnh (or can just call me Anh) <br> I am passionate in web and game development,
+I have experience in game-level design as well as C# scripting with Unity Engine and a bit of Unreal Engine with C++, I also have skills in 3D low-poly modelling with Blender.
+Therefore, I also have web front-end development experience with HTML, CSS and Javascript as well as a learner of React.
+			</p>
 			<a href="docs/AnhTran.pdf" class="btn" style="--clr:#30fe6c" download>
 				<i></i><i></i>
 				<span>Download CV </span>
@@ -92,12 +119,12 @@ and meet goals. Curiosity and willingness to learn and quickly adapt to new skil
 	<section id="about">
 		<div class="secText reveal">
 			<h2>About me</h2>
-			<p>My name is TuanAnh (or can just call me Anh), born in 1999, 
+			<!-- <p>My name is TuanAnh (or can just call me Anh), born in 1999, 
 I have experience in game-level design as well as C# scripting with Unity Engine and a bit of Unreal Engine with C++, I also have skills in 3D low-poly modelling with Blender.
-Therefore, I also have web front-end development experience with HTML, CSS and Javascript as well as a learner of React. </p> <br>
+Therefore, I also have web front-end development experience with HTML, CSS and Javascript as well as a learner of React. </p> <br> -->
 <h3 style="color: #30fe6c; font-size: 1.8em;">Educations </h3> <br>
-  <p>2019: <b>Bachelor of IT (Information Systems) </b> - Queensland University of Technology <br>
-  2022: <b> Bachelor of Games and Interactive Environment (Game Design) </b> - Queensland University of Technology.</p> </br>
+  <p><b>Bachelor of IT (Information Systems) </b> - Queensland University of Technology (2019) <br>
+  <b> Bachelor of Games and Interactive Environments (Game Design) </b> - Queensland University of Technology (2022)</p> </br>
   <h3 style="color: #30fe6c; font-size: 1.8em;">Skills </h3>
 		</div>
 		<div class="content reveal">
