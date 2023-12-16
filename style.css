@@ -376,6 +376,161 @@ header ul li:hover a{
   animation-duration: 2s;
 }
 
+#about .timeline{
+	white-space: nowrap;
+  overflow-x: hidden;
+}
+
+#about .timeline ol{
+	font-size: 0;
+  width: 85vw;
+  padding: 360px 0;
+  transition: all 1s;
+}
+
+#about .timeline ol li{
+	position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+#about .timeline ol li:last-child {
+  width: 280px;
+}
+
+#about .timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+#about .timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #30fe6c;
+}
+
+#about .timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 300px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: #34353a;
+  border-radius: 7px;
+  border: 2px solid #30fe6c;
+}
+
+#about .timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#about .timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+#about .timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: #30fe6c transparent transparent transparent;
+}
+
+#about .timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+#about .timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent #30fe6c;
+}
+
+#about .timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: green;
+}
+
+#about .timeline h4{
+	color: seagreen;
+	margin-bottom: 6px;
+	font-size: 1.1rem;
+	font-style: bold;
+}
+
+#about .timeline h4.company-name{
+	color: #30fe6c;
+	font-size: 1rem;
+}
+
+#about .timeline h4.location{
+	color: #30fe6c;
+	font-size:0.85rem
+}
+
+#about .timeline img{
+	max-width: 27%;
+	margin-left: 35%;
+}
+
+#about .timeline h4 a{
+	text-decoration: none;
+	color: #30fe6c;
+}
+
+#about .timeline p.work-descr{
+	color: white;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+
+#about .timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#about .timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+#about .timeline .disabled {
+	cursor: unset;
+  opacity: 0.5;
+}
+
+#about .timeline button {
+  font-size: 20px;
+  background-color: darkgreen;
+  color: #30fe6c;
+  width: 45px;
+  height: 45px;
+  opacity: 0.75;
+  border: 3px solid #30fe6c;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .secText{
 	position: relative;
 	width: 100%;
@@ -388,7 +543,7 @@ header ul li:hover a{
 	font-size: 3em;
 	color: #fff;
 }
-.secText p{
+.secText p.degree{
 	max-width: 700px;
 	text-align: center;
 	color: #aaa;
@@ -1085,6 +1240,54 @@ form{
 		grid-template-columns: repeat(2, 1fr);
 		margin-left: -120px;
 	}
+	.secText p.degree{
+		font-size: 1.5em;
+	}
+	#about .timeline ol li{
+		width: 110px;
+	}
+	#about .timeline time {
+	  display: block;
+	  font-size: 1.1rem;
+	  font-weight: bold;
+	  margin-bottom: 8px;
+	  color: green;
+	}
+
+	#about .timeline h4{
+		color: seagreen;
+		margin-bottom: 6px;
+		font-size: 1rem;
+		font-style: bold;
+	}
+
+	#about .timeline h4.company-name{
+		font-size: 0.7rem;
+	}
+
+	#about .timeline h4.location{
+		font-size: 0.75rem;
+	}
+
+	#about .timeline ol li div{
+		width: 200px;
+	}
+
+	#about .timeline img{
+		max-width: 27%;
+		margin-left: 35%;
+	}
+
+	#about .timeline h4 a{
+		text-decoration: none;
+		color: #30fe6c;
+	}
+
+	#about .timeline p.work-descr{
+		color: white;
+		letter-spacing: 1px;
+		font-size: 9px;
+	}
 	#projects .imgBx,
 	#projects .imgBx1{
 		margin-left: 5%;
@@ -1105,7 +1308,7 @@ form{
 	}
 }
 
-@media (max-height: 920px){
+/*@media (max-height: 920px){
 	
 	#home{
 		position: relative;
@@ -1121,3 +1324,4 @@ form{
 		margin-top: 650px;
 	}
 }
+*/
