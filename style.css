@@ -376,9 +376,29 @@ header ul li:hover a{
   animation-duration: 2s;
 }
 
+#about .timeline-pc{
+	display: block;
+}
+
 #about .timeline{
 	white-space: nowrap;
   overflow-x: hidden;
+}
+
+#about .timeline-phone{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
+	display: none;
+	justify-content: center;
+	border: 2px solid ghostwhite;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#about .timeline-phone .timeline img{
+	max-width: 20%;
+	margin-left: 35%;
 }
 
 #about .timeline ol{
@@ -1243,12 +1263,25 @@ form{
 	.secText p.degree{
 		font-size: 1.5em;
 	}
+
+	#about .timeline-phone .owl-carousel .owl-stage-outer{
+		height: 10%;
+	}
+
+	#about .timeline-phone{
+		display: block;
+	}
+
+	#about .timeline-pc{
+		display: none;
+	}
+
 	#about .timeline ol li{
 		width: 110px;
 	}
 	#about .timeline time {
 	  display: block;
-	  font-size: 1.1rem;
+	  font-size: 1.2rem;
 	  font-weight: bold;
 	  margin-bottom: 8px;
 	  color: green;
@@ -1257,16 +1290,16 @@ form{
 	#about .timeline h4{
 		color: seagreen;
 		margin-bottom: 6px;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		font-style: bold;
 	}
 
 	#about .timeline h4.company-name{
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 
 	#about .timeline h4.location{
-		font-size: 0.75rem;
+		font-size: 0.85rem;
 	}
 
 	#about .timeline ol li div{
@@ -1286,7 +1319,7 @@ form{
 	#about .timeline p.work-descr{
 		color: white;
 		letter-spacing: 1px;
-		font-size: 9px;
+		font-size: 13px;
 	}
 	#projects .imgBx,
 	#projects .imgBx1{
