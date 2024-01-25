@@ -252,11 +252,11 @@ header ul li:hover a{
 	font-weight: 600;
 }
 
-#home .content .container .text.first-text{
+#home .content .container h3{
 	color: ghostwhite;
 }
 
-#home .content .text.sec-text:before{
+/*#home .content .text.sec-text:before{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -266,16 +266,53 @@ header ul li:hover a{
 	background-color: #222;
 	border-left: 2px solid green;
 	animation: typing-anim 4s steps(12) infinite;
+}*/
+
+#home .content .container h3 span{
+	position: relative;
+	color: #01fe87;
+	animation: typing-anim 9s infinite;
+	animation-delay: calc(-3s * var(--i));
 }
 
-@keyframes typing-anim{
+/*@keyframes typing-anim{
+	0%{
+		display: none;
+	}
+	33.33%,100%{
+		display: none;
+	}
+}*/
+
+#home .content .container span:before{
+	position: absolute;
+	top 0;
+	left: 0;
+	width: 100%;
+	color: #01fe87;
+	overflow: hidden;
+	border-right: 4px solid #01fe87;
+	filter: drop-shadow(0 0 5px #01fe87) drop-shadow(0 0 25px #01fe87);
+	animation: animated 3s linear infinite;
+}
+
+/*@keyframes animated{
+	0%,10%,100%{
+		width: 0;
+	}
+	70%,90%{
+		width: 100%;
+	}
+}*/
+
+/*@keyframes typing-anim{
 	40%, 60%{
 		left: calc(100% + 4px);
 	}
 	100%{
 		left: 0%;
 	}
-}
+}*/
 
 .btn{
 	position: relative;
