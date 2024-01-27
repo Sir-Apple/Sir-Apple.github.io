@@ -257,6 +257,7 @@ header ul li:hover a{
 
 #home .content h3{
 	color: ghostwhite;
+	font-size: 24px;
 }
 
 #home .content .container .box{
@@ -271,18 +272,21 @@ header ul li:hover a{
 	animation: ani1 15s infinite;
 	opacity: 0;
 	color: #01fe87;
+	font-size: 24px;
 }
 
 #home .content .container .b2{
 	animation: ani2 15s infinite;
 	opacity: 0;
 	color: #01fe87;
+	font-size: 24px;
 }
 
 #home .content .container .b3{
 	animation: ani3 15s infinite;
 	opacity: 0;
 	color: #01fe87;
+	font-size: 24px;
 }
 
 @keyframes ani1{
