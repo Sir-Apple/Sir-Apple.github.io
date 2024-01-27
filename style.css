@@ -241,78 +241,86 @@ header ul li:hover a{
 }
 
 #home .content .container{
-	width: 100%;
+/*	width: 100%;*/
 	overflow: hidden;
+	display: flex;
+	box-sizing: content-box;
+	margin-bottom: 30px;
 }
 
-#home .content .container .text{
+/*#home .content .container .text{
 	position: relative;
 	color: green;
 	font-size: 25px;
 	font-weight: 600;
-}
+}*/
 
-#home .content .container h3{
+#home .content h3{
 	color: ghostwhite;
 }
 
-/*#home .content .text.sec-text:before{
-	content: "";
+#home .content .container .box{
+	font-size: 20px;
+	font-weight: bold;
+/*	opacity: 0;*/
 	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
 	width: 100%;
-	background-color: #222;
-	border-left: 2px solid green;
-	animation: typing-anim 4s steps(12) infinite;
-}*/
-
-#home .content .container h3 span{
-	position: relative;
-	color: #01fe87;
-	animation: typing-anim 9s infinite;
-	animation-delay: calc(-3s * var(--i));
 }
 
-/*@keyframes typing-anim{
+#home .content .container .b1{
+	animation: ani1 15s infinite;
+	opacity: 0;
+	color: #01fe87;
+}
+
+#home .content .container .b2{
+	animation: ani2 15s infinite;
+	opacity: 0;
+	color: #01fe87;
+}
+
+#home .content .container .b3{
+	animation: ani3 15s infinite;
+	opacity: 0;
+	color: #01fe87;
+}
+
+@keyframes ani1{
 	0%{
-		display: none;
+		opacity: 0;
 	}
-	33.33%,100%{
-		display: none;
+	16.65%{
+		opacity: 1;
 	}
-}*/
-
-#home .content .container span:before{
-	position: absolute;
-	top 0;
-	left: 0;
-	width: 100%;
-	color: #01fe87;
-	overflow: hidden;
-	border-right: 4px solid #01fe87;
-	filter: drop-shadow(0 0 5px #01fe87) drop-shadow(0 0 25px #01fe87);
-	animation: animated 3s linear infinite;
+	33.33%{
+		opacity: 0;
+	}
 }
 
-/*@keyframes animated{
-	0%,10%,100%{
-		width: 0;
+@keyframes ani2{
+	33.33%{
+		opacity: 0;
 	}
-	70%,90%{
-		width: 100%;
+	49.98%{
+		opacity: 1;
 	}
-}*/
+	66.63%{
+		opacity: 0;
+	}
+}
 
-/*@keyframes typing-anim{
-	40%, 60%{
-		left: calc(100% + 4px);
+@keyframes ani3{
+	66.63%{
+		opacity: 0;
+	}
+	83.28%{
+		opacity: 1;
 	}
 	100%{
-		left: 0%;
+		opacity: 0;
 	}
-}*/
+}
+
 
 .btn{
 	position: relative;
