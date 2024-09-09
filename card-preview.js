@@ -16,12 +16,12 @@ document.querySelectorAll('.swiper-slide .card').forEach(card => {
     };
 });
 
-// Close button logic
+
 document.querySelectorAll('.close-button span').forEach(closeButton => {
     closeButton.onclick = () => {
-        previewContainer.style.display = 'none'; // Hide the preview container when the close button is clicked
+        previewContainer.style.display = 'none'; 
         previewBox.forEach(preview => {
-            preview.classList.remove('active'); // Remove 'active' from all previews
+            preview.classList.remove('active'); 
         });
     };
 });
