@@ -693,7 +693,8 @@ header ul li:hover a{
 }
 
 #about .content .servicesBx .servicesBx-content img{
-	max-width: 47px;
+	width: 46px;
+	height: 48px;
 	filter: invert(1);
 	opacity: 0.5;
 	transition: 0.5s;
