@@ -20,6 +20,7 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	font-family: 'Oxanium', sans-serif;
+	overflow-x: hidden;
 }
 
 header{
@@ -693,8 +694,8 @@ header ul li:hover a{
 }
 
 #about .content .servicesBx .servicesBx-content img{
-	width: 46px;
-	height: 48px;
+	width: 35px;
+	height: 37px;
 	filter: invert(1);
 	opacity: 0.5;
 	transition: 0.5s;
@@ -746,22 +747,22 @@ header ul li:hover a{
 
 #projects .card{
 	width: 100%;
-  height: auto;
-  --s: 25px; /* the size on the corner */
-  --t: 1.5px;  /* the thickness of the border */
-  --g: 20px; /* the gap between the border and image */
+  	height: auto;
+  	--s: 25px; /* the size on the corner */
+  	--t: 1.5px;  /* the thickness of the border */
+  	--g: 20px; /* the gap between the border and image */
   
-  outline: var(--t) solid #00C878; /* the color here */
-  outline-offset: calc(-1*var(--t));
-  mask:
-    conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
-    0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-    linear-gradient(#000 0 0) content-box;
-  background-color: #0000009c;
-  transition: .4s;
-  margin-bottom: 1rem;
-  padding: 0.1rem;
-  cursor: pointer;
+ 	 outline: var(--t) solid #00C878; /* the color here */
+  	outline-offset: calc(-1*var(--t));
+  	mask:
+    	conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+    	0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    	linear-gradient(#000 0 0) content-box;
+ 	background-color: #0000009c;
+ 	transition: .4s;
+  	margin-bottom: 1rem;
+  	padding: 0.1rem;
+  	cursor: pointer;
 }
 
 #projects .card:hover{
@@ -770,9 +771,9 @@ header ul li:hover a{
 
 #projects .card-image{
 /*	height: auto;*/
-  width: 330px;
+ 	 width: 330px;
 	height: 270px;
-  padding: 3rem 1rem 1.5rem; 
+  	padding: 3rem 1rem 1.5rem; 
 }
 
 #projects .card-title span,
@@ -834,6 +835,7 @@ header ul li:hover a{
     margin-top: 0.01rem;
     padding: 1.5rem;
     display: flex;
+	flex-wrap: wrap;
     gap: 0.5rem;
 }
 
@@ -1636,22 +1638,60 @@ form{
 		margin-left: 5%;
 	}
 
+	#projects .card{
+		width: 100%;
+		height: auto;
+		--s: 0px; /* the size on the corner */
+		--t: 0px;  /* the thickness of the border */
+		--g: 0px; /* the gap between the border and image */
+		
+		outline: var(--t) solid #00C878; /* the color here */
+		outline-offset: calc(-1*var(--t));
+		mask:
+		  conic-gradient(at var(--s) var(--s),transparent 75%,#000 0)
+		  0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+		  linear-gradient(#000 0 0) content-box;
+		background-color: #0000009c;
+		transition: .4s;
+		margin-bottom: 1rem;
+		padding: 0.1rem;
+		cursor: pointer;
+	}
+
+	#projects .card-image{
+		width: 280px;
+		height: 220px;
+	  	padding: 3rem 2rem 1.5rem; 
+	}
+
+	#projects .card-skills span{
+		font-size: 0.86rem;
+		/* border: 1px solid #00C878;
+		padding: 0.05rem 0.5rem 0.05rem;
+		border-radius: 10px; */
+	}
+
+	/* #projects .card-preview{
+		width: 100%;
+	} */
+
 	#projects .card-preview .preview{
-		width: 26rem;
+		margin-left: 0.5rem;
+		width: 22rem;
 	}
 
 	#projects .card-preview .preview .card-skills span{
 		font-size: 0.8rem;
 	}
 	#projects .card-preview .preview .card-title{
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 	#projects .card-preview .preview img{
-		height: 18rem;
-		width: 23rem;
+		height: 12rem;
+		width: 17rem;
 	}
 	#projects .card-preview .preview .card-content{
-		font-size: 1rem;
+		font-size: 0.92rem;
 	}
 
 /*	#projects .content,*/
