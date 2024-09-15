@@ -1142,14 +1142,18 @@ header ul li:hover a{
   padding: 3rem 2rem 1.5rem; 
 }
 
+#projects .card-preview .preview .close-button{
+	overflow-y: hidden;
+}
+
 #projects .card-preview .preview .close-button span{
 	color: #00C878;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	cursor: pointer;
 	position: absolute;
 	top: 1rem;
-	right: 1.5rem;
-	overflow: hidden;
+	right: 1.2rem;
+	overflow-y: hidden;
 }
 
 #projects .card-preview .preview .close-button span:hover{
@@ -1696,6 +1700,7 @@ form{
 	#projects .card-preview .preview .card-content{
 		font-size: 0.92rem;
 	}
+
 
 /*	#projects .content,*/
 	#contact .content{
