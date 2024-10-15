@@ -3,7 +3,7 @@ function sendMail(){
 		name: document.getElementById("name").value,
 		email:document.getElementById("email").value,
 		subject:document.getElementById("subject").value,
-		message.document.getElementById("message").value,
+		message:document.getElementById("message").value,
 	};
 	const serviceID = "service_gerihv8";
 	const templateID = "template_9t7luwo"
