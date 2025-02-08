@@ -22,6 +22,10 @@
 	font-family: 'Oxanium', sans-serif;
 }
 
+img{
+	pointer-events: none;
+}
+
 header{
 	position: fixed;
 	top: 0;
